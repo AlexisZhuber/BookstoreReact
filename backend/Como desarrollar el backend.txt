@@ -1,0 +1,66 @@
+Entiendo que quieres instrucciones detalladas sin incluir código específico. Aquí tienes los pasos detallados:
+
+Paso 1: Crear la estructura del backend
+
+Paso 2: Inicializar un nuevo proyecto de Node.js en el backend
+Abre una terminal y navega a la carpeta backend:
+
+bash
+Copy code
+cd backend
+Inicializa un nuevo proyecto de Node.js en la carpeta backend:
+
+bash
+Copy code
+npm init -y
+Paso 3: Instalar las dependencias necesarias para el backend
+Dentro de la carpeta backend, instala Express, Mongoose, y otras dependencias necesarias:
+bash
+Copy code
+npm install express mongoose dotenv
+
+Paso 4: Crear archivos y carpetas necesarios en el backend
+En la carpeta backend, crea un archivo llamado .env para almacenar tus variables de entorno.
+
+Crea un archivo llamado server.js en la carpeta backend.
+
+Crea una carpeta llamada models en la carpeta backend para tus modelos de Mongoose.
+
+Crea una carpeta llamada routes en la carpeta backend para tus rutas de Express.
+
+Paso 5: Configurar el archivo .env
+Abre el archivo .env en la carpeta backend y añade las variables de entorno necesarias, como la URL de conexión a MongoDB.
+Paso 6: Configurar scripts de ejecución en package.json del backend
+Abre el archivo package.json en la carpeta backend y añade un script para iniciar tu servidor:
+json
+Copy code
+"scripts": {
+  "start": "node server.js"
+}
+Paso 7: Configurar el frontend
+Navega a la carpeta frontend y asegúrate de que tienes las dependencias instaladas:
+
+bash
+Copy code
+cd ../frontend
+npm install
+Asegúrate de tener un script para iniciar el servidor de desarrollo en el archivo package.json del frontend:
+
+json
+Copy code
+"scripts": {
+  "start": "vite"
+}
+Paso 8: Ejecutar ambos servidores simultáneamente
+Abre dos terminales separadas:
+En la primera terminal, navega a la carpeta backend y ejecuta:
+bash
+Copy code
+npm start
+En la segunda terminal, navega a la carpeta frontend y ejecuta:
+bash
+Copy code
+npm start
+Esto debería permitirte ejecutar tanto el backend como el frontend simultáneamente.
+
+Si tienes alguna pregunta adicional o necesitas más detalles, házmelo saber.
